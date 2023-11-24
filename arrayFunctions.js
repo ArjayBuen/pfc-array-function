@@ -12,3 +12,10 @@ let array3=[1,2,3];
 let array4=[4,5,6];
 let array5=[7,,9];
 console.log(array3.concat(array4,array5));
+
+const escapeStr = `"FirstLine"\n\t\\SecondLine\n'ThirdLine' \n${array1}`;
+console.log(escapeStr);//typeof = string
+/*It is better to use backticks for string and concatenation, 
+in order to use single or double quotation inside the string without escaping it.
+escape characters aside single or double quote still works inside backticks*/
+
