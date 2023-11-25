@@ -19,3 +19,15 @@ console.log(escapeStr);//typeof = string
 in order to use single or double quotation inside the string without escaping it.
 escape characters aside single or double quote still works inside backticks*/
 
+function fibonacciSeries(numberOfTerms){
+    let fibonacciNum=[];
+    let firstNum=0, secondNum=1, nextTerm;
+    for(let i=1;i<=numberOfTerms;i++){
+        fibonacciNum.push(firstNum);
+        nextTerm=firstNum+secondNum;
+        firstNum=secondNum;
+        secondNum=nextTerm;
+    }
+    return fibonacciNum;
+}
+console.log(fibonacciSeries(20));
