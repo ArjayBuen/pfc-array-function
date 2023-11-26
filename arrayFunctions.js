@@ -31,3 +31,23 @@ function fibonacciSeries(numberOfTerms){
     return fibonacciNum;
 }
 console.log(fibonacciSeries(20));
+
+const array=["HTML", "CSS", "JS", "PHP", "MySQL"];
+//console.log(array.copyWithin(1,0));
+
+//Good for array traversing
+//.entries() puts key value pairs for array manipulation
+const inte=array.entries();//when used it automatically becomes object
+//console.log(inte)
+for(let x of inte){//this how to loop an object
+    console.log(x);
+}
+/* outputs 
+[keyValuePair,Data]
+[0,'HTML']
+[1,'CSS']
+[2,'JS']
+[3,'PHP']
+[4,'MySQL']
+ */
+console.log(typeof inte)//object
