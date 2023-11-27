@@ -51,3 +51,15 @@ for(let x of inte){//this how to loop an object
 [4,'MySQL']
  */
 console.log(typeof inte)//object
+
+const numbers=[22,26,17,19,18]
+
+const checkValue=(value)=> {
+    return value<20;
+}//const checkValue=(value)=> value<20; same but less code
+const lessThan20=numbers.every(checkValue);
+console.log(lessThan20);//returns false
+//if [2,16,17,19,18] returns true
+
+array.fill("WEB",0,1); //.fill("string want to insert, startingIndex, indexToEnd")
+console.log(array)
