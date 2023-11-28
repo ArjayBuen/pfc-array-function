@@ -63,3 +63,15 @@ console.log(lessThan20);//returns false
 
 array.fill("WEB",0,1); //.fill("string want to insert, startingIndex, indexToEnd")
 console.log(array)
+
+const integers=[3,23,9,17,22,32,7,8,15,52];
+const lessThanTen=(value)=>value<10;
+const filteredInt=integers.filter(lessThanTen);
+console.table(filteredInt);//returns [3,9,7,8]
+
+const checkingValue=(value)=>value>10;
+console.log(integers.find(checkingValue));
+//returns 23 because it is the first value > 10
+
+console.log(integers.findIndex(checkingValue));
+//returns index 1 which the value is 23
