@@ -75,3 +75,12 @@ console.log(integers.find(checkingValue));
 
 console.log(integers.findIndex(checkingValue));
 //returns index 1 which the value is 23
+
+array.forEach((item, index)=>{
+    console.log(`item: ${item} index:${index}`);
+});
+
+const text='Javascript';
+const char=Array.from(text);
+console.log(char.reverse());
+//console.log(Array.from(text).reverse());
