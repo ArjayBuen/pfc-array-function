@@ -84,3 +84,12 @@ const text='Javascript';
 const char=Array.from(text);
 console.log(char.reverse());
 //console.log(Array.from(text).reverse());
+
+console.log(array.includes("JS"));//returns true
+console.log(array.includes("js"));//returns false which indicates case sensitivity
+
+console.log(array.indexOf('JS'));//returns index 2
+console.log(array.indexOf('js'));//returns -1 means not inside the array
+console.log(array.indexOf('JS',3));
+//returns index -1 because JS can be found from index 0-2
+
