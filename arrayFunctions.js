@@ -93,3 +93,9 @@ console.log(array.indexOf('js'));//returns -1 means not inside the array
 console.log(array.indexOf('JS',3));
 //returns index -1 because JS can be found from index 0-2
 
+const keys=array.keys();//becomes array iterator
+for(let key of keys){
+    console.log(key);
+}
+console.log(Array.isArray(array));//true
+console.log(Array.isArray(keys));//false 
