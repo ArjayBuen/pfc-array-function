@@ -99,3 +99,6 @@ for(let key of keys){
 }
 console.log(Array.isArray(array));//true
 console.log(Array.isArray(keys));//false 
+
+const arr=["HTML", "CSS", "JS", "PHP", "HTML"];
+console.log(arr.lastIndexOf("HTML"));
