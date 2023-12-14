@@ -102,3 +102,13 @@ console.log(Array.isArray(keys));//false
 
 const arr=["HTML", "CSS", "JS", "PHP", "HTML"];
 console.log(arr.lastIndexOf("HTML"));
+
+const sliced=arr.slice(0,2);
+console.log(sliced);//outputs the new array sliced from the content inside arr
+
+const data=[1,3,5,21,24,27];
+const greaterThan21=(value)=>{
+    console.log(value);//outputs 1 3 5 21
+    return value>21;
+}
+console.log(data.some(greaterThan21));//returns true reaching 24 then ends the loop
