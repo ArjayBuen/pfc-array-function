@@ -112,3 +112,6 @@ const greaterThan21=(value)=>{
     return value>21;
 }
 console.log(data.some(greaterThan21));//returns true reaching 24 then ends the loop
+
+console.log(data.shift());//removes the first data
+console.log(data.pop());//removes the last data
