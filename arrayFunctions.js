@@ -115,3 +115,6 @@ console.log(data.some(greaterThan21));//returns true reaching 24 then ends the l
 
 console.log(data.shift());//removes the first data
 console.log(data.pop());//removes the last data
+
+const newArray=data.map(Math.sqrt);
+console.log(newArray);
